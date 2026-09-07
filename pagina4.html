@@ -1,0 +1,67 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta name="author" content="Arthur José Secchi" />
+    <meta name="keywords" content="html, formulario, contato, atividade" />
+    <meta name="description" content="Página com formulário de contato" />
+    <title>Fale Comigo</title>
+</head>
+<body>
+
+    <h1>Fale Comigo</h1>
+
+    <form action="gravar_dados.php" method="post">
+
+        <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <label>Nome: <input type="text" name="nome" /></label><br />
+            <label>E-mail: <input type="text" name="email" /></label><br />
+
+            <label>Escolaridade:
+                <select name="escolaridade">
+                    <option value="em">Ensino Médio</option>
+                    <option value="nt">Nível Técnico</option>
+                    <option value="ns">Nível Superior</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sobre o assunto</legend>
+
+            <label>Motivo do contato:
+                <input type="radio" name="assunto" value="1" checked /> Faculdade
+                <input type="radio" name="assunto" value="2" /> Academia
+                <input type="radio" name="assunto" value="3" /> Jiu jitsu
+            </label>
+            <br />
+
+            <p>Temas de interesse:</p>
+            <input type="checkbox" name="tema1" value="dev" /> Programação
+            <input type="checkbox" name="tema2" value="esporte" /> Esportes
+            <input type="checkbox" name="tema3" value="ufc" /> UFC
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensagem</legend>
+            <p>Mensagem: <textarea name="mensagem" cols="30" rows="5"></textarea></p>
+        </fieldset>
+
+        <input type="submit" name="enviar" value="Enviar" />
+
+    </form>
+
+    <hr />
+
+    <h3>Menu</h3>
+    <ul>
+        <li><a href="pagina1.html">Início</a></li>
+        <li><a href="pagina2.html">Biografia</a></li>
+        <li><a href="pagina3.html">Rotina</a></li>
+        <li><a href="pagina4.html">Contato</a></li>
+    </ul>
+
+</body>
+</html>
